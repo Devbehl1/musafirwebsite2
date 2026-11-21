@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Musafir Gateaways — visa assistance, flight and hotel bookings, and customised domestic and international tour packages.">
+  <meta name="theme-color" content="#0878cf">
+  <title>Musafir Gateaways | Explore the World</title>
+  <link rel="preconnect" href="https://images.unsplash.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><img src="assets/musafir-gateaways-logo.png" alt="Musafir Gateaways"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav"><a class="nav-active" href="#home">⌂ Home</a><a href="#packages">Packages⌄</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="whatsapp-top" href="https://wa.me/919724218939?text=Hello%20Musafir%20Gateaways%2C%20I%20have%20a%20travel%20enquiry." target="_blank" rel="noopener">◉ Chat on WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="sky-cloud cloud-one"></div><div class="sky-cloud cloud-two"></div>
+      <div class="hero-copy">
+        <div class="mini-label">✦ YOUR JOURNEY STARTS HERE</div>
+        <h1>Explore the World with<br><span>Musafir Gateaways</span></h1>
+        <p class="hero-tagline">Your Dream Journey, Our Passion</p>
+        <p class="hero-desc">From visa assistance to unforgettable getaways, let’s make your next journey simple, smooth and special.</p>
+        <a class="orange-btn" href="#packages">Explore Packages <b>→</b></a>
+      </div>
+      <div class="hero-art">
+        <div class="route route-a"></div><div class="route route-b"></div>
+        <div class="plane">✈</div>
+        <div class="landmark eiffel">♜</div><div class="landmark tower">▥</div><div class="landmark dome">◒</div>
+        <div class="hero-globe"><span>✦</span></div>
+        <div class="hero-palms">♣　♣　♣</div>
+      </div>
+      <form class="trip-search" id="tripSearch">
+        <label><span>⌖</span><small>FROM</small><input id="fromPlace" placeholder="Your city" aria-label="From city"></label>
+        <label><span>⌖</span><small>TO</small><input id="toPlace" placeholder="Where to?" aria-label="Destination"></label>
+        <label><span>▦</span><small>TRAVEL DATE</small><input id="travelDate" type="date" aria-label="Travel date"></label>
+        <label><span>♙</span><small>TRAVELLERS</small><select id="travellers" aria-label="Number of travellers"><option>1 Traveller</option><option selected>2 Travellers</option><option>3 Travellers</option><option>4 Travellers</option><option>5+ Travellers</option></select></label>
+        <button type="submit">⌕ Search</button>
+      </form>
+      <div class="hero-bottom-note">✦ DISCOVER MORE. WORRY LESS. ✦</div>
+    </section>
+
+    <section class="packages-section" id="packages">
+      <div class="section-title"><span></span><div><h2>Popular Packages</h2><p>Discover handpicked travel experiences</p></div><span></span></div>
+      <div class="package-tabs"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="international">International</button><button class="filter" data-filter="domestic">Domestic</button></div>
+      <div class="package-grid">
+        <article class="package-card" data-type="international" data-id="paris"><div class="package-image" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85')"><span class="tag">International</span><span class="package-caption"><b>Europe Tour</b><small>Explore the Best of Europe</small></span><button class="round-arrow" aria-label="View Europe package">›</button></div></article>
+        <article class="package-card" data-type="international" data-id="dubai"><div class="package-image" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85')"><span class="tag">International</span><span class="package-caption"><b>Dubai Tour</b><small>Experience the Extraordinary</small></span><button class="round-arrow" aria-label="View Dubai package">›</button></div></article>
+        <article class="package-card" data-type="domestic" data-id="kashmir"><div class="package-image" style="background-image:url('https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=900&q=85')"><span class="tag blue-tag">Domestic</span><span class="package-caption"><b>Himachal Tour</b><small>Feel the Serenity</small></span><button class="round-arrow" aria-label="View Himachal package">›</button></div></article>
+        <article class="package-card" data-type="international" data-id="singapore"><div class="package-image" style="background-image:url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=85')"><span class="tag">International</span><span class="package-caption"><b>Singapore Tour</b><small>Discover the Magic</small></span><button class="round-arrow" aria-label="View Singapore package">›</button></div></article>
+        <article class="package-card" data-type="domestic" data-id="goa"><div class="package-image" style="background-image:url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=85')"><span class="tag blue-tag">Domestic</span><span class="package-caption"><b>Goa Tour</b><small>Sun, Sand & Fun</small></span><button class="round-arrow" aria-label="View Goa package">›</button></div></article>
+      </div>
+      <p class="sample-note">Packages shown are travel inspirations. Prices, itinerary, availability and inclusions are shared after your enquiry.</p>
+    </section>
+
+    <section class="trust-strip" id="about"><div><b class="trust-icon">✓</b><span><strong>Personalised Planning</strong><small>Trips shaped around you</small></span></div><i></i><div><b class="trust-icon">✈</b><span><strong>Travel Essentials</strong><small>Flights, stays & visa guidance</small></span></div><i></i><div><b class="trust-icon">☏</b><span><strong>Friendly Support</strong><small>Here for your enquiries</small></span></div><i></i><div><b class="trust-icon">◎</b><span><strong>Worldwide Dreams</strong><small>Explore near and far</small></span></div></section>
+
+    <section class="services-section" id="services"><div class="section-title"><span></span><div><h2>Travel, made simpler</h2><p>Everything you need to get your journey moving</p></div><span></span></div><div class="service-grid"><article><b>◎</b><h3>Visa Application & Assistance</h3><p>Guidance with application steps and document preparation.</p></article><article><b>✈</b><h3>Flight Bookings</h3><p>Explore flight options for your preferred route and dates.</p></article><article><b>⌂</b><h3>Hotel Bookings</h3><p>Find stays to suit your travel style and budget.</p></article><article><b>✧</b><h3>Tour Packages</h3><p>Customised domestic and international trip ideas.</p></article></div></section>
+
+    <section class="contact-section" id="contact"><div><div class="mini-label">LET’S PLAN YOUR NEXT GETAWAY</div><h2>Ready to make<br>memories?</h2><p>Tell us where you want to go. We’ll help you take the first step.</p><a class="orange-btn" href="https://wa.me/919724218939?text=Hello%20Musafir%20Gateaways%2C%20I%20want%20to%20plan%20a%20trip." target="_blank" rel="noopener">Start a WhatsApp chat ↗</a></div><div class="contact-info"><p><small>CALL / WHATSAPP</small><a href="tel:+919724218939">+91 97242 18939</a></p><p><small>EMAIL</small><a href="mailto:musafirgateway@gmail.com">musafirgateway@gmail.com</a></p><p><small>ADDRESS</small><span>201 Pancharatna Avenue, Near Amba Mata Mandir, Adinathnagar, Odhav, Ahmedabad, Gujarat, India.</span></p></div></section>
+  </main>
+  <footer><a href="#home">MUSAFIR <span>GATEAWAYS</span></a><p>Travel Beyond Boundaries ✈</p><small>© <span id="year"></span> Musafir Gateaways</small></footer>
+  <a class="whatsapp-float" href="https://wa.me/919724218939?text=Hello%20Musafir%20Gateaways%2C%20I%20have%20a%20travel%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
+  <div class="modal-backdrop" id="packageModal" aria-hidden="true"><section class="package-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-photo" id="modalPhoto"></div><div class="modal-content"><div class="mini-label">YOUR NEXT GETAWAY</div><span class="modal-tag" id="modalTag"></span><h2 id="modalTitle"></h2><p id="modalDescription"></p><h3>Highlights</h3><ul id="modalHighlights"></ul><p class="modal-note">Ask us for a customised quote, current availability and complete itinerary. All arrangements are subject to confirmation.</p><a class="orange-btn" id="modalWhatsapp" href="#" target="_blank" rel="noopener">Enquire on WhatsApp ↗</a></div></section></div>
+  <script src="script.js"></script>
+</body></html>
